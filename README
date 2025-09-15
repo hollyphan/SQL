@@ -1,65 +1,36 @@
-🏡 Nashville Housing Data Cleaning & Analysis (SQL Project)
-📌 Overview
+# 🏡 Nashville Housing Data Cleaning & Analysis (SQL Project)
 
-This project recreates and expands upon Alex the Analyst’s Nashville Housing dataset analysis. The goal was to clean, standardize, and prepare messy real estate transaction data using SQL so it could be reliably used for business reporting and decision-making.
+**Date:** Sept 2025  
 
-🎯 Business Problem
+## 📌 Project Overview
+This project is a **SQL-based data cleaning and transformation** exercise using the Nashville Housing dataset.
 
-Housing datasets are often inconsistent and incomplete, making it difficult for:
+The goal was to **standardize and prepare raw housing transaction data** so it could be reliably used for **business analysis, forecasting, and reporting**.
 
-Analysts to track property sales trends.
+This project demonstrates my ability to:
+- Apply **SQL techniques for data cleaning and normalization**
+- Standardize inconsistent formats (dates, addresses, categorical fields)
+- Handle missing values and duplicates to improve data quality
+- Prepare datasets for **business intelligence and decision-making**
 
-Real estate firms to forecast demand.
+---
 
-Financial institutions to evaluate lending risk.
+## 🛠 Tools & Skills Used
+- **SQL (SSMS)**
+  - Joins & subqueries  
+  - String functions (SUBSTRING, CHARINDEX, PARSENAME, REPLACE)  
+  - Data type conversions (CAST/CONVERT)  
+  - Window functions (ROW_NUMBER) for deduplication
+- **Data Cleaning & Transformation**
+  - Standardizing date and address formats
+  - Handling NULLs with relational lookups
+  - Converting categorical inconsistencies (e.g., “Y/Yes” → Yes)
+  - Removing duplicate transactions
 
-A clean, well-structured dataset ensures accurate insights for pricing strategy, investment decisions, and market reporting.
+---
 
-🛠️ Approach
-
-Tools & Environment: SQL Server Management Studio (SSMS)
-Key Cleaning Steps:
-
-Standardized SaleDate formats for consistency in time-series analysis.
-
-Populated missing PropertyAddress values using cross-joins with ParcelID.
-
-Split OwnerAddress into Street, City, and State columns.
-
-Parsed SoldAsVacant column into consistent “Yes/No” values.
-
-Removed duplicate rows to ensure unique transactions.
-
-📊 Deliverables
-
-Clean SQL script (Nashville_Housing_Cleaning.sql)
-
-Final cleaned dataset ready for reporting & visualization.
-
-🔑 Key Insights from Cleaning Process
-
-30+% of addresses required backfilling from related records.
-
-Multiple inconsistencies in “SoldAsVacant” column (e.g., “Y”, “Yes”, “N”, “No”) — standardized to Yes/No.
-
-Duplicate records identified and eliminated, improving data integrity for KPIs like median sales price and neighborhood growth trends.
-
-📈 Business Impact
-
-By transforming raw housing data into a clean dataset, this project:
-
-Improves data reliability for stakeholders (real estate investors, analysts, and financial partners).
-
-Enables better decision-making by ensuring accuracy in pricing models and forecasts.
-
-Reduces reporting errors, saving analysts time in recurring monthly/quarterly reporting.
-
-🚀 Skills Demonstrated
-
-Data Cleaning & Transformation (SQL)
-
-Joins & Subqueries
-
-Data Quality Assurance
-
-Business Storytelling with Technical Work
+## 📊 Key Insights
+- **Address Standardization:** A significant share of `PropertyAddress` values required backfilling or restructuring to enable neighborhood-level analysis.  
+- **Vacancy Status:** Inconsistent values (“Y”, “Yes”, “N”, “No”) were standardized to **Yes/No**, improving reporting accuracy.  
+- **Duplicates:** Identified and removed duplicate property sales using window functions to ensure unique transaction counts.  
+- **Owner Information:** Split `OwnerAddress` into **Street, City, and State**, making the dataset more usable for geographic analysis.
