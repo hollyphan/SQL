@@ -1,0 +1,65 @@
+🏡 Nashville Housing Data Cleaning & Analysis (SQL Project)
+📌 Overview
+
+This project recreates and expands upon Alex the Analyst’s Nashville Housing dataset analysis. The goal was to clean, standardize, and prepare messy real estate transaction data using SQL so it could be reliably used for business reporting and decision-making.
+
+🎯 Business Problem
+
+Housing datasets are often inconsistent and incomplete, making it difficult for:
+
+Analysts to track property sales trends.
+
+Real estate firms to forecast demand.
+
+Financial institutions to evaluate lending risk.
+
+A clean, well-structured dataset ensures accurate insights for pricing strategy, investment decisions, and market reporting.
+
+🛠️ Approach
+
+Tools & Environment: SQL Server Management Studio (SSMS)
+Key Cleaning Steps:
+
+Standardized SaleDate formats for consistency in time-series analysis.
+
+Populated missing PropertyAddress values using cross-joins with ParcelID.
+
+Split OwnerAddress into Street, City, and State columns.
+
+Parsed SoldAsVacant column into consistent “Yes/No” values.
+
+Removed duplicate rows to ensure unique transactions.
+
+📊 Deliverables
+
+Clean SQL script (Nashville_Housing_Cleaning.sql)
+
+Final cleaned dataset ready for reporting & visualization.
+
+🔑 Key Insights from Cleaning Process
+
+30+% of addresses required backfilling from related records.
+
+Multiple inconsistencies in “SoldAsVacant” column (e.g., “Y”, “Yes”, “N”, “No”) — standardized to Yes/No.
+
+Duplicate records identified and eliminated, improving data integrity for KPIs like median sales price and neighborhood growth trends.
+
+📈 Business Impact
+
+By transforming raw housing data into a clean dataset, this project:
+
+Improves data reliability for stakeholders (real estate investors, analysts, and financial partners).
+
+Enables better decision-making by ensuring accuracy in pricing models and forecasts.
+
+Reduces reporting errors, saving analysts time in recurring monthly/quarterly reporting.
+
+🚀 Skills Demonstrated
+
+Data Cleaning & Transformation (SQL)
+
+Joins & Subqueries
+
+Data Quality Assurance
+
+Business Storytelling with Technical Work
