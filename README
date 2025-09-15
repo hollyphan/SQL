@@ -1,36 +1,48 @@
-# 🏡 Nashville Housing Data Cleaning & Analysis (SQL Project)
+# ☕ Coffee Sales Dashboard (Excel Project)
 
-**Date:** Sept 2025  
+**Date:** Aug 2025  
 
 ## 📌 Project Overview
-This project is a **SQL-based data cleaning and transformation** exercise using the Nashville Housing dataset.
+This project is an **interactive Excel dashboard** that analyzes coffee sales data across **regions, product types, and customer loyalty segments**.  
 
-The goal was to **standardize and prepare raw housing transaction data** so it could be reliably used for **business analysis, forecasting, and reporting**.
+The goal of the dashboard is to provide business leaders with **actionable insights** on revenue drivers, customer behavior, and sales performance trends.  
 
-This project demonstrates my ability to:
-- Apply **SQL techniques for data cleaning and normalization**
-- Standardize inconsistent formats (dates, addresses, categorical fields)
-- Handle missing values and duplicates to improve data quality
-- Prepare datasets for **business intelligence and decision-making**
+This project demonstrates my ability to:  
+- Build dynamic dashboards using **PivotTables, PivotCharts, and Slicers**  
+- Apply **advanced Excel formulas** for data cleaning and transformation  
+- Present data in a **clean, professional, and customizable format**  
+- Translate raw sales data into **business insights and recommendations**  
 
 ---
 
 ## 🛠 Tools & Skills Used
-- **SQL (SSMS)**
-  - Joins & subqueries  
-  - String functions (SUBSTRING, CHARINDEX, PARSENAME, REPLACE)  
-  - Data type conversions (CAST/CONVERT)  
-  - Window functions (ROW_NUMBER) for deduplication
-- **Data Cleaning & Transformation**
-  - Standardizing date and address formats
-  - Handling NULLs with relational lookups
-  - Converting categorical inconsistencies (e.g., “Y/Yes” → Yes)
-  - Removing duplicate transactions
+- **Microsoft Excel**  
+  - PivotTables & PivotCharts  
+  - Advanced formulas (INDEX/MATCH, VLOOKUP, SUMIFS, etc.)  
+  - Slicers & data filters  
+  - Conditional formatting  
+- **Data Analysis**  
+  - Trend identification  
+  - Regional & product performance analysis  
+  - Customer segmentation  
 
 ---
 
 ## 📊 Key Insights
-- **Address Standardization:** A significant share of `PropertyAddress` values required backfilling or restructuring to enable neighborhood-level analysis.  
-- **Vacancy Status:** Inconsistent values (“Y”, “Yes”, “N”, “No”) were standardized to **Yes/No**, improving reporting accuracy.  
-- **Duplicates:** Identified and removed duplicate property sales using window functions to ensure unique transaction counts.  
-- **Owner Information:** Split `OwnerAddress` into **Street, City, and State**, making the dataset more usable for geographic analysis.
+- **Regional Trends:** Certain regions consistently outperformed others, signaling where expansion efforts should be focused.  
+- **Product Analysis:** Espresso-based products accounted for the highest percentage of total sales, indicating strong consumer demand.  
+- **Customer Loyalty:** Repeat customers generated a significant portion of revenue, highlighting the importance of loyalty programs.  
+
+---
+
+## 📸 Dashboard Preview
+ 
+![Image Alt](https://github.com/hollyphan/Excel/blob/b92e78af1cd1815e4bb062e5d9040a785fdbc1aa/Coffee%20Dashboard.png)
+
+---
+
+## 🚀 Business Impact
+If implemented in a real-world coffee retail business, this dashboard would:  
+- Allow management to **quickly identify top-performing products and regions**  
+- Help marketing teams **target high-value customer segments**  
+- Support finance and operations teams with **monthly KPI reporting**  
